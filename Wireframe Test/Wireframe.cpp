@@ -159,13 +159,13 @@ int main(int argc, char* args[])
 				}
 
 				if (colorCount[i] % 2 == 1)
-				{
+			{
 					//Changes color to red
 					SDL_SetRenderDrawColor(gRenderer, 0xFF, 0x00, 0x00, 0xFF);
 					createCircle(320, 240, radii[i], radii[i] - linearOffset[i]);
-				}
-				else
-				{
+			}
+			else
+			{
 					//Changes color to green
 					SDL_SetRenderDrawColor(gRenderer, 0x00, 0xFF, 0x00, 0xFF);
 					createCircle(320, 240, radii[i], radii[i] - linearOffset[i]);
@@ -175,9 +175,9 @@ int main(int argc, char* args[])
 
 			printf("%f, %f\n", linearOffset[0], linearOffset[1]);
 
-			SDL_Delay(10);
+				SDL_Delay(10);
+			}
 		}
-	}
 
 	return 0;
 }
